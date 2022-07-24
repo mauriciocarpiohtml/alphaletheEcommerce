@@ -1,0 +1,82 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+
+
+#contacto{
+    h2{
+        text-align: center;
+        font-size: 3.4rem;
+        margin-bottom: 2rem;
+    }
+    span{
+        color: v.$background;
+        font-size: 3.4rem;
+    }
+}
+
+.form{
+    margin-bottom: 4rem;
+    @media (min-width:768px){
+        @include m.grid;
+    }
+
+    .form__campo{
+        margin-top: 1rem;
+    }
+
+    input{
+        width: 90%;
+        padding: 1.5rem;
+        background: none;
+        border: none;
+        border-bottom: 1px solid v.$background;
+        
+        
+    }
+
+    textarea{
+        @extend input;
+        @media (min-width:768px){
+           grid-column: 1 / span 3;
+        }
+    }
+
+    label{
+        text-transform: uppercase;
+        font-size: 1.5rem ;
+        margin-top: 1rem;
+        
+        
+    }
+}
+
+
+$btn:(
+
+espaciado: 12px 24px,
+bordes: 0.5px solid #4f4f4f,
+radio: 4px,
+tamano:19px,
+fondo:#088178,
+color:#fff,
+);
+
+ .form{
+
+    .btn{
+        
+            display: inline-block;
+            padding: map-get($btn,espaciado );
+            border:map-get($btn,bordes ) ;
+            border-radius: map-get($btn,radio );
+            font-size: map-get($btn,tamano ) ;
+            background-color: map-get($btn,fondo );
+            color: map-get($btn,color );
+            margin-top: 2rem;
+            
+          
+     }
+ }
+
+
