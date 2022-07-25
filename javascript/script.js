@@ -13,17 +13,26 @@ const productos =[
 const contenedor= document.querySelector('.productos__container')
 
 //botonones filtrado
-const btnLeggins= document.querySelector('.btnLeg')
+const btnleg= document.querySelector('.btnLeggins')
+
+console.log(btnleg)
 const btnTops= document.querySelector('.btnTop')
 const btnAll= document.querySelector('.btnAll')
 const btnJackets=document.querySelector('.btnJacket')
 
+
+
 //eventos 
 
-btnLeggins.addEventListener('click', filtrarLeggins)
+
+btnleg.addEventListener('click', filtrarLeggins)
 btnTops.addEventListener('click', filtrarTops)
 btnAll.addEventListener('click', mostrarTodos)
 btnJackets.addEventListener('click', filtrarJackets)
+
+//eventos pagina producto
+// imagenDos.addEventListener('click', cambiarImagen)
+
 
 
 mostrarProductos(productos)

@@ -762,15 +762,23 @@ a {
 }
 #productopage .productoimagen {
   width: 100%;
+  
   margin-top: 0;
+  display: flex;
+  
 }
+
+
+
 @media (min-width: 992px) {
   #productopage .productoimagen {
-    width: 35%;
+    width: 42%;
     margin-right: 5rem;
     border-radius: 6px;
   }
 }
+
+
 #productopage .productocontenido {
   width: 100%;
 }
@@ -907,4 +915,4 @@ a {
   text-transform: uppercase;
 }
 
-/*# sourceMappingURL=estilos.css.map */
+
